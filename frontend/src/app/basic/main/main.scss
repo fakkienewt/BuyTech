@@ -1,0 +1,96 @@
+:host {
+    width: 100%;
+    padding: 40px 0;
+    font-family: monospace;
+}
+
+.container-bar {
+    width: 70%;
+    margin: 0 auto;
+    background: #0a0a0a;
+    border: 1px solid #1a1a1a;
+    border-radius: 20px 20px 0 0;
+    border-bottom: none;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tabs-left {
+    display: flex;
+    gap: 12px;
+}
+
+.tab {
+    padding: 10px 20px;
+    background: #111;
+    color: white;
+    border: 1px solid #1a1a1a;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.tab:hover {
+    transform: scale(1.1);
+}
+
+.tab.active {
+    background: #22c55e;
+}
+
+.skeletons-container {
+    width: 70%;
+    margin: 0 auto;
+    background: #050505;
+    border: 1px solid #1a1a1a;
+    border-radius: 0 0 20px 20px;
+    padding: 24px;
+}
+
+.skeletons-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.skeleton-card {
+    background: #0a0a0a;
+    border: 2px solid #1a1a1a;
+    border-radius: 20px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+}
+
+.skeleton-poster {
+    width: 100%;
+    height: 200px;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 15px;
+    margin-bottom: 14px;
+}
+
+.skeleton-line {
+    height: 12px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.skeleton-line.gray {
+    width: 70%;
+    background: #1a1a1a;
+}
+
+.skeleton-line.green {
+    width: 60%;
+    height: 14px;
+    gap: 10px;
+    background: #22c55e;
+    opacity: 0.5;
+}

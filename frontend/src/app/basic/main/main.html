@@ -1,0 +1,20 @@
+<app-popular></app-popular>
+<div class="container-bar">
+    <div class="tabs-left">
+        <div class="tab active">Ноутбуки</div>
+        <div class="tab">Телевизоры</div>
+        <div class="tab">Смартфоны</div>
+        <div class="tab">Аксессуары</div>
+    </div>
+    <div class="tab catalog-button">Каталог</div>
+</div>
+
+<div class="skeletons-container">
+    <div class="skeletons-grid">
+        <div *ngFor="let i of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18]" class="skeleton-card">
+            <div class="skeleton-poster"></div>
+            <div class="skeleton-line gray"></div>
+            <div class="skeleton-line green"></div>
+        </div>
+    </div>
+</div>
